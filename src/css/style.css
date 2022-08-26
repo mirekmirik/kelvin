@@ -635,10 +635,48 @@ body {
     width: 296px;
     height: 367px;
   }
+  /* line 425, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .portfolio__img {
+    margin-bottom: 30px;
+  }
+  /* line 427, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .portfolio__items {
+    row-gap: 55px;
+  }
+  /* line 429, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .portfolio__title {
+    margin-bottom: 50px;
+  }
+  /* line 431, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .portfolio__content {
+    padding: 0px 30px;
+  }
+  /* line 433, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .portfolio__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  /* line 436, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .footer {
+    padding: 60px 0px;
+  }
+  /* line 438, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .footer__text {
+    margin-bottom: 20px;
+  }
+  /* line 443, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .footer__title {
+    margin-bottom: 20px;
+  }
+  /* line 445, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .footer__icons {
+    column-gap: 50px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 256px) {
-  /* line 427, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 452, D:/kelvin layout/kelvin/src/sass/style.sass */
   .types__items {
     row-gap: 220px;
   }
