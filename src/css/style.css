@@ -1,11 +1,13 @@
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* line 2, D:/kelvin layout/kelvin/src/sass/reset.scss */
 * {
   padding: 0px;
   margin: 0px;
   border: none;
 }
 
+/* line 8, D:/kelvin layout/kelvin/src/sass/reset.scss */
 *,
 *::before,
 *::after {
@@ -13,41 +15,49 @@
 }
 
 /* Links */
+/* line 16, D:/kelvin layout/kelvin/src/sass/reset.scss */
 a, a:link, a:visited {
   /* color: inherit; */
   text-decoration: none;
   /* display: inline-block; */
 }
 
+/* line 22, D:/kelvin layout/kelvin/src/sass/reset.scss */
 a:hover {
   /* color: inherit; */
   text-decoration: none;
 }
 
 /* Common */
+/* line 29, D:/kelvin layout/kelvin/src/sass/reset.scss */
 aside, nav, footer, header, section, main {
   display: block;
 }
 
+/* line 33, D:/kelvin layout/kelvin/src/sass/reset.scss */
 h1, h2, h3, h4, h5, h6, p {
   font-size: inherit;
   font-weight: inherit;
 }
 
+/* line 38, D:/kelvin layout/kelvin/src/sass/reset.scss */
 ul, ul li {
   list-style: none;
 }
 
+/* line 42, D:/kelvin layout/kelvin/src/sass/reset.scss */
 img {
   vertical-align: top;
 }
 
+/* line 46, D:/kelvin layout/kelvin/src/sass/reset.scss */
 img, svg {
   max-width: 100%;
   height: auto;
 }
 
 /* Form */
+/* line 53, D:/kelvin layout/kelvin/src/sass/reset.scss */
 input, textarea, button, select {
   font-family: inherit;
   font-size: inherit;
@@ -55,11 +65,13 @@ input, textarea, button, select {
   background-color: transparent;
 }
 
+/* line 60, D:/kelvin layout/kelvin/src/sass/reset.scss */
 input::-ms-clear {
   display: none;
 }
 
-button, input[type=submit] {
+/* line 64, D:/kelvin layout/kelvin/src/sass/reset.scss */
+button, input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -67,53 +79,134 @@ button, input[type=submit] {
   cursor: pointer;
 }
 
+/* line 72, D:/kelvin layout/kelvin/src/sass/reset.scss */
 input:focus, input:active,
 button:focus, button:active {
   outline: none;
 }
 
+/* line 77, D:/kelvin layout/kelvin/src/sass/reset.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
+/* line 82, D:/kelvin layout/kelvin/src/sass/reset.scss */
 label {
   cursor: pointer;
 }
 
+/* line 86, D:/kelvin layout/kelvin/src/sass/reset.scss */
 legend {
   display: block;
 }
 
+/* line 7, D:/kelvin layout/kelvin/src/sass/style.sass */
 body {
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
+/* line 11, D:/kelvin layout/kelvin/src/sass/style.sass */
 .none {
   display: none !important;
 }
 
+/* line 14, D:/kelvin layout/kelvin/src/sass/style.sass */
 .container {
   padding: 0px 15px;
   max-width: 1170px;
   margin: 0 auto;
 }
 
+/* line 19, D:/kelvin layout/kelvin/src/sass/style.sass */
+.nav__toggle {
+  display: none;
+}
+
+/* line 22, D:/kelvin layout/kelvin/src/sass/style.sass */
+.menu-icon-wrapper {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 30, D:/kelvin layout/kelvin/src/sass/style.sass */
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: black;
+}
+
+/* line 37, D:/kelvin layout/kelvin/src/sass/style.sass */
+.menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: '';
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+/* line 48, D:/kelvin layout/kelvin/src/sass/style.sass */
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+/* line 60, D:/kelvin layout/kelvin/src/sass/style.sass */
+.menu-icon.menu-icon--active {
+  background-color: transparent;
+}
+
+/* line 64, D:/kelvin layout/kelvin/src/sass/style.sass */
+.menu-icon.menu-icon--active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* line 70, D:/kelvin layout/kelvin/src/sass/style.sass */
+.menu-icon.menu-icon--active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* line 76, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header {
   overflow: hidden;
   padding-top: 46px;
   min-height: 770px;
   background: #F1F1F1;
 }
+
+/* line 81, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header__top {
   margin-bottom: 200px;
 }
+
+/* line 83, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header__row {
   display: flex;
 }
+
+/* line 85, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header__content {
   z-index: 1;
 }
+
+/* line 87, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header__title {
   max-width: 482px;
   font-weight: 600;
@@ -122,6 +215,8 @@ body {
   color: #000000;
   margin-bottom: 20px;
 }
+
+/* line 94, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header__description {
   max-width: 500px;
   font-weight: 400;
@@ -130,10 +225,14 @@ body {
   /* or 28px */
   color: #000000;
 }
+
+/* line 103, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header__img {
   position: relative;
   flex-grow: 1;
 }
+
+/* line 107, D:/kelvin layout/kelvin/src/sass/style.sass */
 .header__img img {
   position: absolute;
   top: -123px;
@@ -143,27 +242,34 @@ body {
   height: 613px;
 }
 
+/* line 118, D:/kelvin layout/kelvin/src/sass/style.sass */
 .nav {
   display: flex;
   justify-content: space-between;
   height: 32px;
 }
+
+/* line 122, D:/kelvin layout/kelvin/src/sass/style.sass */
 .nav__list {
   display: flex;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   align-items: flex-end;
 }
+
+/* line 126, D:/kelvin layout/kelvin/src/sass/style.sass */
 .nav__list-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
 }
+
+/* line 131, D:/kelvin layout/kelvin/src/sass/style.sass */
 .nav__list-item-link.active {
   color: #606060;
 }
 
+/* line 136, D:/kelvin layout/kelvin/src/sass/style.sass */
 .logo {
   position: relative;
   font-weight: 700;
@@ -171,8 +277,10 @@ body {
   line-height: 100%;
   color: #000000;
 }
+
+/* line 142, D:/kelvin layout/kelvin/src/sass/style.sass */
 .logo::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 6px;
@@ -182,21 +290,29 @@ body {
   background-color: #FDA300;
 }
 
+/* line 164, D:/kelvin layout/kelvin/src/sass/style.sass */
 .types {
   padding: 90px 0px;
 }
+
+/* line 166, D:/kelvin layout/kelvin/src/sass/style.sass */
 .types__items {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
+
+/* line 169, D:/kelvin layout/kelvin/src/sass/style.sass */
 .types__item {
-  width: 33.3333333333%;
+  width: calc(100%/3);
   height: 228px;
 }
+
+/* line 172, D:/kelvin layout/kelvin/src/sass/style.sass */
 .types__item-logo {
   margin-bottom: 30px;
 }
+
+/* line 174, D:/kelvin layout/kelvin/src/sass/style.sass */
 .types__item-title {
   margin-bottom: 10px;
   font-weight: 600;
@@ -205,6 +321,8 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+/* line 181, D:/kelvin layout/kelvin/src/sass/style.sass */
 .types__item-description {
   font-weight: 400;
   font-size: 14px;
@@ -212,10 +330,13 @@ body {
   color: #000000;
 }
 
+/* line 188, D:/kelvin layout/kelvin/src/sass/style.sass */
 .portfolio {
   background: #F1F1F1;
   padding: 90px 0px;
 }
+
+/* line 192, D:/kelvin layout/kelvin/src/sass/style.sass */
 .portfolio__title {
   text-align: center;
   font-weight: 600;
@@ -225,31 +346,41 @@ body {
   margin-bottom: 70px;
   color: #070707;
 }
+
+/* line 201, D:/kelvin layout/kelvin/src/sass/style.sass */
 .portfolio__items {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 90px;
 }
+
+/* line 207, D:/kelvin layout/kelvin/src/sass/style.sass */
 .portfolio__img {
   margin-bottom: 40px;
 }
+
+/* line 209, D:/kelvin layout/kelvin/src/sass/style.sass */
 .portfolio__text {
   text-align: center;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
+/* line 214, D:/kelvin layout/kelvin/src/sass/style.sass */
 .footer {
   padding: 90px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* line 219, D:/kelvin layout/kelvin/src/sass/style.sass */
 .footer__content {
   max-width: 342px;
   text-align: center;
 }
+
+/* line 222, D:/kelvin layout/kelvin/src/sass/style.sass */
 .footer__title {
   font-weight: 600;
   font-size: 34px;
@@ -257,6 +388,8 @@ body {
   margin-bottom: 40px;
   color: #070707;
 }
+
+/* line 228, D:/kelvin layout/kelvin/src/sass/style.sass */
 .footer__text {
   font-weight: 400;
   font-size: 18px;
@@ -266,6 +399,8 @@ body {
   /* Black */
   color: #070707;
 }
+
+/* line 238, D:/kelvin layout/kelvin/src/sass/style.sass */
 .footer__btn {
   padding: 7.5px 23px;
   background: #070707;
@@ -276,12 +411,15 @@ body {
   color: #FFFFFF;
   margin-bottom: 80px;
 }
+
+/* line 247, D:/kelvin layout/kelvin/src/sass/style.sass */
 .footer__icons {
   display: flex;
-  -moz-column-gap: 61.35px;
-       column-gap: 61.35px;
+  column-gap: 61.35px;
   margin-bottom: 40px;
 }
+
+/* line 251, D:/kelvin layout/kelvin/src/sass/style.sass */
 .footer__bottom-text {
   font-weight: 400;
   font-size: 14px;
@@ -290,28 +428,191 @@ body {
 }
 
 @media (max-width: 1199px) {
+  /* line 273, D:/kelvin layout/kelvin/src/sass/style.sass */
   .container {
     width: 960px;
   }
+  /* line 276, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__title {
     font-size: 38px;
+    width: 450px;
   }
+  /* line 279, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__description {
+    font-size: 14px;
+  }
+  /* line 282, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__img img {
-    left: 70px;
+    left: -50px;
+  }
+  /* line 286, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav__list-item-link {
+    font-size: 13px;
+    column-gap: 40px;
+  }
+  /* line 289, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav__toggle {
+    display: none;
   }
 }
+
 @media (max-width: 991px) {
+  /* line 294, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header {
+    min-height: 650px;
+  }
+  /* line 296, D:/kelvin layout/kelvin/src/sass/style.sass */
   .container {
-    width: 720px;
+    width: 820px;
+  }
+  /* line 298, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header {
+    padding-top: 40px;
+  }
+  /* line 301, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__img img {
+    width: 400px;
+    height: 500px;
+    left: -80px;
+  }
+  /* line 306, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav__list {
+    display: none;
+  }
+  /* line 308, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav__toggle {
+    display: block;
+  }
+  /* line 310, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav--mobile {
+    padding: 46px 30px 0px 30px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    overflow-y: hidden;
+  }
+  /* line 320, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav--mobile .nav__toggle {
+    display: flex;
+    align-items: flex-start;
+  }
+  /* line 323, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav--mobile .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+  /* line 328, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav--mobile .nav__list-item-link {
+    font-size: 34px;
+    line-height: 51px;
+    color: #828282;
+  }
+  /* line 332, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav--mobile .active {
+    color: black;
+  }
+  /* line 334, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .nav--mobile .nav__logo {
+    display: none;
+  }
+  /* line 338, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .menu-icon--active::before {
+    background-color: #828282;
+  }
+  /* line 340, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .menu-icon--active::after {
+    background-color: #828282;
   }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 815px) {
+  /* line 347, D:/kelvin layout/kelvin/src/sass/style.sass */
   .container {
-    width: 540px;
+    width: 570px;
+  }
+  /* line 350, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__top {
+    margin-bottom: 90px;
+  }
+  /* line 352, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__row {
+    flex-direction: column;
+  }
+  /* line 354, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__description {
+    margin-bottom: 20px;
+  }
+  /* line 357, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__img img {
+    position: static;
   }
 }
-@media (max-width: 575px) {
+
+@media (max-width: 560px) {
+  /* line 362, D:/kelvin layout/kelvin/src/sass/style.sass */
   .container {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+  /* line 365, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__title {
+    width: 100%;
+    font-size: 34px;
+  }
+  /* line 368, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__title-span {
+    font-size: 28px;
+  }
+  /* line 371, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__img img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 379, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .container {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  /* line 382, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header {
+    padding-top: 40px;
+  }
+  /* line 384, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__top {
+    margin-bottom: 53px;
+  }
+  /* line 386, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__row {
+    align-items: center;
+  }
+  /* line 388, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__title {
+    font-size: 34px;
+    line-height: 51px;
+    width: 100%;
+  }
+  /* line 393, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__title-span {
+    font-size: 28px;
+    line-height: 44px;
+  }
+  /* line 397, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__description {
+    width: 100%;
+  }
+  /* line 401, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .header__img img {
+    width: 296px;
+    height: 367px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
