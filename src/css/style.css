@@ -535,83 +535,112 @@ body {
   /* line 347, D:/kelvin layout/kelvin/src/sass/style.sass */
   .container {
     width: 570px;
+    padding: 0px 30px;
   }
-  /* line 350, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 351, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__top {
     margin-bottom: 90px;
   }
-  /* line 352, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 353, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__row {
     flex-direction: column;
   }
-  /* line 354, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 355, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__description {
     margin-bottom: 20px;
   }
-  /* line 357, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 358, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__img img {
     position: static;
   }
 }
 
 @media (max-width: 560px) {
-  /* line 362, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 363, D:/kelvin layout/kelvin/src/sass/style.sass */
   .container {
     width: 100%;
+    padding: 0px 30px;
   }
-  /* line 365, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 367, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__title {
     width: 100%;
     font-size: 34px;
   }
-  /* line 368, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 370, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__title-span {
     font-size: 28px;
   }
-  /* line 371, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 373, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__img img {
     width: 250px;
     height: auto;
   }
 }
 
+@media (max-width: 500px) {
+  /* line 378, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .container {
+    padding: 0px 30px;
+  }
+  /* line 380, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .types {
+    padding-top: 60px 0px;
+  }
+  /* line 382, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .types__items {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  /* line 385, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .types__item {
+    width: unset;
+  }
+}
+
 @media (max-width: 375px) {
-  /* line 379, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 392, D:/kelvin layout/kelvin/src/sass/style.sass */
   .container {
     width: 100%;
     padding: 0px 30px;
   }
-  /* line 382, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 395, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header {
     padding-top: 40px;
   }
-  /* line 384, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 397, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__top {
     margin-bottom: 53px;
   }
-  /* line 386, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 399, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__row {
     align-items: center;
   }
-  /* line 388, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 401, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__title {
     font-size: 34px;
     line-height: 51px;
     width: 100%;
   }
-  /* line 393, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 406, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__title-span {
     font-size: 28px;
     line-height: 44px;
   }
-  /* line 397, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 410, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__description {
     width: 100%;
   }
-  /* line 401, D:/kelvin layout/kelvin/src/sass/style.sass */
+  /* line 414, D:/kelvin layout/kelvin/src/sass/style.sass */
   .header__img img {
     width: 296px;
     height: 367px;
+  }
+}
+
+@media (max-width: 256px) {
+  /* line 427, D:/kelvin layout/kelvin/src/sass/style.sass */
+  .types__items {
+    row-gap: 220px;
   }
 }
 
